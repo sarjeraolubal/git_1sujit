@@ -1,0 +1,8 @@
+#Alternate default index pages
+DirectoryIndex index.php
+
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} ^/index\.(html|php)
+RewriteRule ^(.*) /home.php
